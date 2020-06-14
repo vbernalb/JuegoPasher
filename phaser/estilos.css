@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+canvas{
+    display:block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 780px) {  
+    /* Si la pantalla es mayor a 780px muestra el texto a la derecha */
+	 .texto {
+		 margin-top: -450px;
+		 margin-left: 360px;
+		 }
+}
