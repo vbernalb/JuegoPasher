@@ -5,17 +5,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>juego</title>
-	<script src="phaser.js"></script>
+	<script src="phaser.js"></script> <!-- se cargan los scripts del juego-->
 	<script src="scripts/principal.js"></script>
 	<script src="scripts/juegoUno.js"></script>
 	<script src="scripts/juegoDos.js"></script>
 	<script src="scripts/juegoTres.js"></script>
-    <script src="scripts/scripts.js"></script>
+	<script src="scripts/juegoUnoIntro.js"></script>
+	<script src="scripts/juegoDosIntro.js"></script>
+	<script src="scripts/juegoTresIntro.js"></script>
+	<script src="scripts/perder.js"></script>
+	<script src="scripts/ganar.js"></script>
+	<script src="scripts/scripts.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 	<link href="estilos.css" rel="stylesheet" type="text/css">
+	 
 	<meta name="viewport" content="width=device-width; initial-scale=1.0"><!-- configurar la vista inicial al tamaño del dispositivo -->
 </head>
 
 <body>
-	<div id="pecera"></div>
+	<!--contendor para los elementos-->
+	<div class="contenedor">	
+		<h2 class>Entrega 2 Gráfica Interactiva</h2> <!--texto del titulo, afectado por h2 del css-->
+		<div class="juegoPhaser" id="Juanito"></div> <!-- div para el juego de phaser, con id Juanito-->
+			<p class="texto"> ¡Acompaña a Juanito en esta maravillosa aventura en busca de los ratones! <!--texto afectado por el estilo texto-->
+			</p>
+			<img src="imagenes/gatito.png" class="gato" alt="Ícono torre"> <!--imagen del gato-->
+	</div>
+      
+
 </body>
 </html>

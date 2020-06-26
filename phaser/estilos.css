@@ -1,18 +1,52 @@
 @charset "UTF-8";
+        /* configuracion del fondo, fuente y color de la fuente */
+		body {
+            background-image: url(imagenes/fondoPag.jpg);   
+            font-family: 'Lato', sans-serif;;    
+            color: bisque; 
+		}
+       .contenedor { 
+         margin: auto; 
+	     max-width: 800px; /*max ancho del contendor*/
+         min-height: 600px;   /*max alto del contendor*/ 
+		 } 
+        h2 {
+			margin-top: 10px; /*margin arriba*/
+            padding-top: 20px; /*espacio interior superior*/
+            margin-left: 20px;
+            font-size: 36px; /*tamaño de la fuente*/
+			font-style: normal;
+			font-weight: normal;
+			text-align: center;
+	        text-shadow: 1px 1px burlywood; /*sombra del texto*/
+		}
+       .texto {
+         position: relative; /*posicion realtiva para manejar con margin*/
+         padding-left: 40px; /*paddings*/
+         padding-right: 75px;
+         padding-top: 25px;
+	     width: 360px;
+		 text-align: justify; /*se justifica*/
+		 font-size: 20px;
+		 }
+		.juegoPhaser {	
+		 box-shadow: 10px 15px 15px 0 rgba(27, 27, 27, 0.8); /*sombra que proyecta el canvas*/
+	     margin-left: 30px;
+	     width: 320px;
+         } 
 
-canvas{
-    display:block;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 @media only screen and (min-width: 780px) {  
     /* Si la pantalla es mayor a 780px muestra el texto a la derecha */
 	 .texto {
-		 margin-top: -450px;
+		 margin-top: -450px; 
 		 margin-left: 360px;
-		 }
-}
+         }
+    img { /*se define relativa la posicion de la imagen y se mueve su posicion con margin para ubicarlo abajo*/ 
+        position: relative;
+        margin-top: 10px;
+		margin-left: 420px;
+    }
+         
+    }
+    
